@@ -1,9 +1,9 @@
-<h2>音声認識サンプル</h2>
+<h2>音声認識・文字起こし</h2>
     <button id="btn">start</button>
     <div id="content"></div>
+
 <script>
-//音声認識の準備
-const speech = new webkitSpeechRecognition();
+    const speech = new webkitSpeechRecognition();
     speech.lang = 'ja-JP';
 
     const btn = document.getElementById('btn');
@@ -24,5 +24,4 @@ const speech = new webkitSpeechRecognition();
     speech.onend = () => { 
         speech.start() 
     };
-
 </script>
