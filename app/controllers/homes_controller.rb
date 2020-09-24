@@ -3,7 +3,7 @@ require 'google/cloud/speech'
 class HomesController < ApplicationController
   
 
-  def index
+  def transcription
     
     
   end
